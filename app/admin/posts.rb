@@ -20,6 +20,7 @@ ActiveAdmin.register Post do
 	column :id
 	column :title
 	column :published?
+	
 	column :author
 	column :created_at
 	column "Image" do |product|
@@ -39,8 +40,7 @@ ActiveAdmin.register Post do
         row :created_at
         row :updated_at
         row :categories
-			  row :published
-				row :published
+			  row :published_at
 			  row :unpublished
 
 				row :image do |ad|

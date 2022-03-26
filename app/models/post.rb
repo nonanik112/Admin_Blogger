@@ -14,4 +14,7 @@ class Post < ApplicationRecord
   def to_s
     title
   end
+  def post_parms
+    	params.require(:post).permit(:title, :body, :category_id, :author_id)
+  end
 end

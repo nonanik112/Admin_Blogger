@@ -5,7 +5,8 @@ class CreatePosts < ActiveRecord::Migration[7.0]
       t.text :body, null: false
       t.datetime :published_at
       # t.references :category
-      t.references :author
+      t.integer :category_id
+      t.integer :author_id
 
       t.timestamps
     end
