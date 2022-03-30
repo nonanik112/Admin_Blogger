@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<h1><strong><%= @category.name %> Posts</strong></h1>
+
+<% if @posts.each do |post| %>
+	<div class="jumbotron" style="margin-bottom: 10px;">
+			<h3><%= link_to post.title, post%></h3>
+			<p class="lead"><%= post.body%></p>
+		</div>
+
+<% end.empty? %>
+	<p>Sorry, There is no post here!</p>
+<% end %>
+
+<hr>
+<%= link_to 'All Categories', categories_path %>

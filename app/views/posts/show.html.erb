@@ -1,0 +1,9 @@
+<h1> <%= @post.title%> </h1>
+<p><%= @post.created_at.strftime("%b %d. %Y") %></p>
+
+<p><%= @post.body %></p>
+<br>
+<p><strong>Category: </strong> <%= link_to @post.category.name, category_path(:id => @post.category.id) %></p>
+
+<hr>
+<%= link_to "All Posts", posts_path %>

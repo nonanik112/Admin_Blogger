@@ -8,6 +8,8 @@ class Post < ApplicationRecord
 
   has_one_attached :image
 
+
+
   scope :published, ->{ where.not(published_at: nil) }
   scope :unpublished, ->{ where(published_at: nil) }
 

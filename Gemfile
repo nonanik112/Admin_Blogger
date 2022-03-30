@@ -41,6 +41,10 @@ gem 'sass-rails', '~> 6.0'
 gem 'activestorage', '~> 7.0', '>= 7.0.2.3'
 gem 'arbre', '~> 1.5'
 gem 'will_paginate', '~> 3.3', '>= 3.3.1'
+gem 'bootstrap', '~> 5.1', '>= 5.1.3'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.8'
+gem 'jquery-rails'
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
@@ -52,7 +56,7 @@ gem "bootsnap", require: false
 # gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+ gem "image_processing", "~> 1.2"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
